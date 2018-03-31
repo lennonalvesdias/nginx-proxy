@@ -10,7 +10,6 @@ services:
       - "/etc/nginx/vhost.d"
       - "/usr/share/nginx/html"
       - "/var/run/docker.sock:/tmp/docker.sock:ro"
-      - "nginx_certs:/etc/nginx/certs:rw"
 
 networks:
   default:
