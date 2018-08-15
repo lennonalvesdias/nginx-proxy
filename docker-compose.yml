@@ -1,8 +1,8 @@
 version: "3"
 services:
   nginx-proxy:
-    image: jwilder/nginx-proxy
-    container_name: nginx-proxy
+    image: lennonalvesdias/proxy
+    container_name: proxy
     ports:
       - "80:80"
       - "443:443"
