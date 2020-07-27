@@ -7,6 +7,11 @@ services:
     ports:
       - "80:80"
       - "443:443"
+    environment:
+      VIRTUAL_HOST: lennon.cloud
+      LETSENCRYPT_HOST: lennon.cloud
+      LETSENCRYPT_EMAIL: lennonalvesdias@gmail.com
+      DEFAULT_HOST: site.lennon.cloud
     volumes:
       - conf:/etc/nginx/conf.d
       - vhost:/etc/nginx/vhost.d
