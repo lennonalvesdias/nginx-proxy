@@ -41,18 +41,18 @@ docker run -d --name mongo -p 27017:27017 --restart=unless-stopped --network ngi
 docker run -d --name redis --restart=always --network nginx-proxy redis:latest redis-server --appendonly yes
 ```
 
+## user
 whoiam
 sudo su -
 nano /etc/ssh/sshd_config
 service sshd restart
 adduser docker
-# server 35.196.236.49
-# user docker
-# password $V:zU-r{kc{e4~bG
+// server 35.196.236.49
+// user docker
+// password $V:zU-r{kc{e4~bG
 usermod -aG sudo docker
 groups docker
 nano /etc/sudoers
 
-# github google token a316274c453945bac48922a3bac293a4fa7ea228
-
-https://blog.ssdnodes.com/blog/self-hosting-handbook/
+// github google token a316274c453945bac48922a3bac293a4fa7ea228
+// https://blog.ssdnodes.com/blog/self-hosting-handbook/
