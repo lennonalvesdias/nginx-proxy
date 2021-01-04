@@ -50,9 +50,13 @@ adduser gituser \
 // server 35.196.236.49 \
 // user gituser \
 // password 6gvYbqUy6T6X \
-usermod -aG sudo docker \
-groups docker \
+usermod -aG sudo gituser \
+groups gituser \
 nano /etc/sudoers \
 
-// github google token a316274c453945bac48922a3bac293a4fa7ea228 \
-// https://blog.ssdnodes.com/blog/self-hosting-handbook/
+// https://blog.ssdnodes.com/blog/self-hosting-handbook/ \
+
+sudo curl -sS https://get.docker.com/ | sh \
+sudo systemctl enable docker \
+sudo groupadd docker \
+sudo usermod -aG docker $USER \
