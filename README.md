@@ -52,18 +52,18 @@ adduser gituser \
 // password 6gvYbqUy6T6X \
 usermod -aG sudo gituser \
 groups gituser \
-nano /etc/sudoers \
+nano /etc/sudoers
 
 // https://blog.ssdnodes.com/blog/self-hosting-handbook/ \
 
 sudo curl -sS https://get.docker.com/ | sh \
 sudo systemctl enable docker \
 sudo groupadd docker \
-sudo usermod -aG docker $USER \
+sudo usermod -aG docker $USER
 
 sudo -i \
 curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose \
-chmod +x /usr/local/bin/docker-compose \
+chmod +x /usr/local/bin/docker-compose
 
 sudo apt update \
 sudo apt install git
