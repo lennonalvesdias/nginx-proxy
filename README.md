@@ -49,7 +49,7 @@ service sshd restart \
 adduser gituser \
 // server 35.196.236.49 \
 // user gituser \
-// password $V:zU-r{kc{e4~bG \
+// password 6gvYbqUy6T6X \
 usermod -aG sudo docker \
 groups docker \
 nano /etc/sudoers \
