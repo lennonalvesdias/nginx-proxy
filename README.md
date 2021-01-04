@@ -46,9 +46,9 @@ whoiam \
 sudo su - \
 nano /etc/ssh/sshd_config \
 service sshd restart \
-adduser docker \
+adduser gituser \
 // server 35.196.236.49 \
-// user docker \
+// user gituser \
 // password $V:zU-r{kc{e4~bG \
 usermod -aG sudo docker \
 groups docker \
