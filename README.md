@@ -54,7 +54,7 @@ usermod -aG sudo gituser \
 groups gituser \
 nano /etc/sudoers
 
-// https://blog.ssdnodes.com/blog/self-hosting-handbook/ \
+// https://blog.ssdnodes.com/blog/self-hosting-handbook/
 
 sudo curl -sS https://get.docker.com/ | sh \
 sudo systemctl enable docker \
